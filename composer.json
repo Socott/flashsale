@@ -1,0 +1,17 @@
+{
+    "name": "pengbin/flash-sale",
+    "description": "this is flash sale plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pengbin",
+            "email": "pengbin_2012@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "PengBin\\FlashSale\\": "src/"
+        }
+    }
+}
