@@ -10,13 +10,19 @@ namespace PengBin\FlashSale\Code;
  */
 class CodeMsg
 {
-    private $code;
-    private $msg;
     //数据返回
+    public  function render_data($data = [],$code = 200,$msg = 'success'){
+        return  response()->json([
+            'code'=>$code,
+            'msg'=>$msg,
+            'data'=>$data
+        ]);
+    }
+    //只返回结果
     public  function render($code = 200,$msg = 'success'){
         return  response()->json([
-            'code'=>$this->code,
-            'msg'=>$this->msg,
+            'code'=>$code,
+            'msg'=>$msg,
         ]);
     }
 }
